@@ -18,6 +18,8 @@
 		28F77C4F1726C3820089F4AB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28F77C4E1726C3820089F4AB /* Default-568h@2x.png */; };
 		28F77C521726C3820089F4AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F77C511726C3820089F4AB /* ViewController.m */; };
 		28F77C551726C3820089F4AB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F77C531726C3820089F4AB /* ViewController.xib */; };
+		28F77C5E1726C3A00089F4AB /* NTGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F77C5D1726C3A00089F4AB /* NTGridView.m */; };
+		28F77C611726C6210089F4AB /* NTGridCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F77C601726C6210089F4AB /* NTGridCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		28F77C501726C3820089F4AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		28F77C511726C3820089F4AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		28F77C541726C3820089F4AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		28F77C5C1726C3A00089F4AB /* NTGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTGridView.h; sourceTree = "<group>"; };
+		28F77C5D1726C3A00089F4AB /* NTGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTGridView.m; sourceTree = "<group>"; };
+		28F77C5F1726C6210089F4AB /* NTGridCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTGridCellView.h; sourceTree = "<group>"; };
+		28F77C601726C6210089F4AB /* NTGridCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTGridCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		28F77C3E1726C3810089F4AB /* NTGridViewProj */ = {
 			isa = PBXGroup;
 			children = (
+				28F77C5B1726C38B0089F4AB /* NTGridView */,
 				28F77C471726C3810089F4AB /* AppDelegate.h */,
 				28F77C481726C3810089F4AB /* AppDelegate.m */,
 				28F77C501726C3820089F4AB /* ViewController.h */,
@@ -105,6 +112,17 @@
 				28F77C4E1726C3820089F4AB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28F77C5B1726C38B0089F4AB /* NTGridView */ = {
+			isa = PBXGroup;
+			children = (
+				28F77C5C1726C3A00089F4AB /* NTGridView.h */,
+				28F77C5D1726C3A00089F4AB /* NTGridView.m */,
+				28F77C5F1726C6210089F4AB /* NTGridCellView.h */,
+				28F77C601726C6210089F4AB /* NTGridCellView.m */,
+			);
+			name = NTGridView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +194,8 @@
 				28F77C451726C3810089F4AB /* main.m in Sources */,
 				28F77C491726C3810089F4AB /* AppDelegate.m in Sources */,
 				28F77C521726C3820089F4AB /* ViewController.m in Sources */,
+				28F77C5E1726C3A00089F4AB /* NTGridView.m in Sources */,
+				28F77C611726C6210089F4AB /* NTGridCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
