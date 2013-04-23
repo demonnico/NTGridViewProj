@@ -13,12 +13,23 @@
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    if (self) {
+    if (self)
+    {
         // Initialization code
     }
     return self;
 }
 
+-(void)reloadData
+{
+
+}
+
+- (id)dequeueReusableCellWithIdentifier:(NSString *)identifier
+                                 inList:(NSInteger)listNum
+{
+    return nil;
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
