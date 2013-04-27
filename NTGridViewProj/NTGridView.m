@@ -10,18 +10,22 @@
 
 @implementation NTGridView
 
-- (id)initWithFrame:(CGRect)frame
+-(id)initWithFrame:(CGRect)frame
+ scrollOrientation:(NTGridViewOrientation)orientation
 {
-    self = [super initWithFrame:frame];
-    if (self)
+    if (self=[super initWithFrame:frame])
     {
-        // Initialization code
+        self.orientation = orientation;
     }
     return self;
 }
 
 -(void)reloadData
 {
+    [self caculateContentSize];
+    
+}
+
 /**
  *	@brief	计算出GridView中内容的大小
  */

@@ -11,7 +11,9 @@
 
 @class  NTGridView;
 
-@protocol NTGridViewDelegate <NSObject>
+@protocol NTGridViewDelegate
+<UIScrollViewDelegate,
+NSObject>
 
 
 /**
@@ -23,8 +25,7 @@
  *	@return	listIndex对应子TableView的宽度/高度
  */
 - (CGFloat)gridView:(NTGridView *)gridView
-         sizeForRow:(NSInteger)rowNum
-             inList:(NSInteger)listNum;
+        sizeForList:(NSInteger)listIndex;
 
 /**
  *	@brief	获得gridView中子tableView的cell高度/宽度
