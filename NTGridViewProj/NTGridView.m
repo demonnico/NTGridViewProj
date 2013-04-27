@@ -22,6 +22,43 @@
 
 -(void)reloadData
 {
+/**
+ *	@brief	计算出GridView中内容的大小
+ */
+-(void)caculateContentSize
+{
+    NSInteger listAmount =  [_dataSource gridViewAmountOfList:self];
+    
+    CGFloat sizeDynamicForHeight = 0;
+    for (int listIndex=0; listIndex<listAmount; listIndex++)
+    {
+        //或者listIndex对应的子tableView行数/列数
+        NSInteger rowAmount= [_dataSource gridView:self
+                                numberOfRowsInList:listIndex];
+        
+        CGFloat size = 0;
+        for (int rowIndex=0; rowIndex<rowAmount; rowIndex++)
+        {
+            CGFloat sizeForRowIndex = [_delegate gridView:self
+                                               sizeForRow:rowIndex];
+            size+=sizeForRowIndex;
+        }
+        //获得多列/多行中相对较长/宽的一个List尺寸
+        if(sizeDynamicForHeight<size)
+            sizeDynamicForHeight = size;
+    }
+    
+    switch(_orientation)
+    {
+        case NTGridViewVertical:
+            self.contentSize = CGSizeMake(self.frame.size.width,
+                                          sizeDynamicForHeight);
+            break;
+        case NTGridViewHorizonal:
+            self.contentSize = CGSizeMake(sizeDynamicForHeight,
+                                          self.frame.size.height);
+            break;
+    }
 
 }
 
