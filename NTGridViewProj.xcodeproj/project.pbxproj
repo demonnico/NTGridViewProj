@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280FA60B172BA3EB007C090E /* UIView+ResetCoord.m in Sources */ = {isa = PBXBuildFile; fileRef = 280FA60A172BA3EB007C090E /* UIView+ResetCoord.m */; };
 		28F77C391726C3810089F4AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F77C381726C3810089F4AB /* UIKit.framework */; };
 		28F77C3B1726C3810089F4AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F77C3A1726C3810089F4AB /* Foundation.framework */; };
 		28F77C3D1726C3810089F4AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F77C3C1726C3810089F4AB /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280FA609172BA3EB007C090E /* UIView+ResetCoord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ResetCoord.h"; sourceTree = "<group>"; };
+		280FA60A172BA3EB007C090E /* UIView+ResetCoord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ResetCoord.m"; sourceTree = "<group>"; };
 		28F77C351726C3810089F4AB /* NTGridViewProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTGridViewProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F77C381726C3810089F4AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28F77C3A1726C3810089F4AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,8 @@
 				28F77C5D1726C3A00089F4AB /* NTGridView.m */,
 				28F77C5F1726C6210089F4AB /* NTGridCellView.h */,
 				28F77C601726C6210089F4AB /* NTGridCellView.m */,
+				280FA609172BA3EB007C090E /* UIView+ResetCoord.h */,
+				280FA60A172BA3EB007C090E /* UIView+ResetCoord.m */,
 			);
 			name = NTGridView;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				28F77C521726C3820089F4AB /* ViewController.m in Sources */,
 				28F77C5E1726C3A00089F4AB /* NTGridView.m in Sources */,
 				28F77C611726C6210089F4AB /* NTGridCellView.m in Sources */,
+				280FA60B172BA3EB007C090E /* UIView+ResetCoord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +322,7 @@
 				28F77C5A1726C3820089F4AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
