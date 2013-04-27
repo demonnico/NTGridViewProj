@@ -77,13 +77,27 @@
  *	@return	子视图
  */
 - (NTGridCellView*)gridView:(UITableView *)tableView
-                 cellForRow:(NSInteger)rowNum
-                    forList:(NSInteger)listNum;
+                 cellForRow:(NSInteger)rowIndex
+                    forList:(NSInteger)listIndex;
+
 @end
+
+typedef enum
+{
+    NTGridViewVertical,
+    NTGridViewHorizonal
+}NTGridViewOrientation;
 
 @interface NTGridView : UIScrollView
 
+@property (nonatomic,assign) NTGridViewOrientation      orientation;
+@property (nonatomic,assign) id<NTGridViewDataSource>   dataSource;
+@property (nonatomic,assign) id<NTGridViewDelegate>     delegate;
+
+-(id)initWithFrame:(CGRect)frame
+ scrollOrientation:(NTGridViewOrientation)orientation;
 -(void)reloadData;
 - (id)dequeueReusableCellWithIdentifier:(NSString *)identifier
+                             cellForRow:(NSInteger)row
                                  inList:(NSInteger)listNum;
 @end
